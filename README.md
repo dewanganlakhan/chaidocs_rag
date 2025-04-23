@@ -23,7 +23,7 @@ This application implements a Retrieval-Augmented Generation (RAG) system for th
 1. Clone the repository:
    ```bash
    git clone https://github.com/dewanganlakhan/chaidocs_rag.git
-   cd chaidocs-rag
+   cd chaidocs_rag
    ```
 
 2. Install dependencies:
@@ -57,7 +57,7 @@ CHUNK_OVERLAP = 200  # Overlap between chunks
 Run the indexing process (only needs to be done once or when docs update):
 
 ```bash
-python main.py --index
+python chaidocs.py --index
 ```
 
 ### Querying the System
@@ -65,7 +65,7 @@ python main.py --index
 Start the interactive query interface:
 
 ```bash
-python main.py
+python chaidocs.py
 ```
 
 Example queries:
@@ -76,7 +76,7 @@ Example queries:
 ### Command Line Options
 
 ```
-usage: main.py [-h] [--index] [--query QUERY]
+usage: chaidocs.py [-h] [--index] [--query QUERY]
 
 ChaiDocs RAG System
 
